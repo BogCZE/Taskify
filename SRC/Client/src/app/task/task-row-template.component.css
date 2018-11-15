@@ -1,0 +1,7 @@
+.ellipsis-overflow {
+  text-overflow: ellipsis-word;
+  overflow: hidden;
+
+  max-height: 12rem;
+
+}

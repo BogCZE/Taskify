@@ -1,4 +1,4 @@
 <h2>Active tasks</h2>
 <div class="row">
-  <taskify-task-row-template *ngFor="let task of activeTasks | async;let i = index" [task]="task" [ngClass]="{'col-md-3' : !isSelected(task), 'col-md-12' : isSelected(task), 'd-none' : isHidden(task)}" class="mb-3"></taskify-task-row-template>
+  <taskify-task-row-template *ngFor="let task of activeTasks | async;let i = index" [task]="task" class="col-md-3 mb-3"></taskify-task-row-template>
 </div>

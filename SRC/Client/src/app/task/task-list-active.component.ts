@@ -24,24 +24,4 @@ export class TaskListActiveComponent implements OnInit {
   trackBy() {
     console.log(arguments);
   }
-
-  click(task: Task) {
-    console.log(arguments);
-    if (this.isSelected(task)) {
-      this.selectedTask = null;
-    }
-    else {
-      this.selectedTask = task;
-    }
-  }
-
-  isSelected(task: Task) {
-    return this.selectedTask == task;
-  }
-
-  isHidden(task: Task) {
-    console.log(this.selectedTask!= null && !this.isSelected(task));
-    return this.selectedTask != null && !this.isSelected(task);
-  }
-
 }

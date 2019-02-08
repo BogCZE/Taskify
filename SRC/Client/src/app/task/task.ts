@@ -7,6 +7,7 @@ export class Task {
   Comments: Comment[];
   Active: boolean;
   DeadLine: Date;
+  Category: CategoryEnum;
 }
 
 export class Comment {
@@ -17,3 +18,10 @@ export class Comment {
   CreatedBy: number;
   UpdateBy: number;
 }
+
+export enum CategoryEnum {
+  'Angular' = 1,
+  'C#' = 2,
+  'PHP' = 3
+}
+export const categories = CategoryEnum;

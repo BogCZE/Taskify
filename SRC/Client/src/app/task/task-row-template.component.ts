@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, HostListener, HostBinding } from '@angular/core';
-import { Task } from './task'
+import { Task, categories } from './task'
 
 @Component({
   selector: 'taskify-task-row-template',
@@ -20,7 +20,9 @@ export class TaskRowTemplateComponent implements OnInit {
     console.log(fiveDaysBeforeDeadlineDate);
     return this.task.DeadLine;
   }
-
+  getCategory(category: number) {
+    return categories[category];
+  }
   constructor() { }
 
   ngOnInit() {

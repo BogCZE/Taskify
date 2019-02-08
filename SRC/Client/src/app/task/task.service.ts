@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Task } from './task';
+import { Task, categories } from './task';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
@@ -18,7 +18,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 12, 30)
+        DeadLine:  new Date(2018, 12, 30),
+        Category: categories.Angular
       },
       <Task>{
         Id: 1,
@@ -27,7 +28,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 2, 30)
+        DeadLine:  new Date(2018, 2, 30),
+        Category: categories.Angular
       },
       <Task>{
         Id: 2,
@@ -36,7 +38,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 12, 30)
+        DeadLine:  new Date(2018, 12, 30),
+        Category: categories["C#"]
       },
       <Task>{
         Id: 3,
@@ -45,7 +48,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 5, 30)
+        DeadLine:  new Date(2018, 5, 30),
+        Category: categories.PHP
       },
       <Task>{
         Id: 4,
@@ -54,7 +58,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 12, 30)
+        DeadLine:  new Date(2018, 12, 30),
+        Category: categories["C#"]
       },
       <Task>{
         Id: 5,
@@ -63,7 +68,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 12, 30)
+        DeadLine:  new Date(2018, 12, 30),
+        Category: categories.Angular
       },
       <Task>{
         Id: 6,
@@ -72,7 +78,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 12, 30)
+        DeadLine:  new Date(2018, 12, 30),
+        Category: categories.PHP
       },
       <Task>{
         Id: 7,
@@ -81,7 +88,8 @@ export class TaskService {
         DesiredHours: 160,
         ExpectedBudget: 25000,
         Active: true,
-        DeadLine:  new Date(2018, 12, 30)
+        DeadLine:  new Date(2018, 12, 30),
+        Category: categories.Angular
       },
     ]);
   }

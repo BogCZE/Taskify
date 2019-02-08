@@ -1,5 +1,5 @@
-<div class="card h-100" [ngClass]="{'border-danger': isDeadlined()}">
-  <div class="card-header">{{task.Identification}}</div>
+<div class="card h-100 shadow" [ngClass]="{'border-danger': isDeadlined()}">
+  <div class="card-header">{{task.Identification}}<span class="float-right"><a href="#"><mat-icon>info</mat-icon></a><a href="#" class="text-success"><mat-icon>check_circle_outline</mat-icon></a></span></div>
   <div class="card-body">
     <h5 class="card-title">{{task.Identification}}</h5>
     <p class="card-text ellipsis-overflow">{{task.Description}}</p>

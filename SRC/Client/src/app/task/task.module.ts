@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { TaskListActiveComponent } from './task-list-active.component';
 import { TaskRowTemplateComponent } from './task-row-template.component';
 import { PreviewPipe } from '../pipes/preview.pipe';
+import { MaterialDesignModule } from '../material-design/material-design.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialDesignModule
   ],
   exports: [
     TaskListActiveComponent

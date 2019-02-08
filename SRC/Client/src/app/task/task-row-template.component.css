@@ -5,3 +5,18 @@
   max-height: 12rem;
 
 }
+mat-icon {
+  font-size: 1.2rem;
+}
+
+div.card div.card-header span.float-right {
+  opacity: 0;
+  -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
+  transition: opacity 1s;
+}
+
+div.card:hover div.card-header span.float-right{
+  opacity: 0.6;
+}
+
+

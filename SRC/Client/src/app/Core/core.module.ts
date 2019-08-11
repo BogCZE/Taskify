@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
-import { AboutUsComponent } from './about-us/about-us.component';
 import { MaterialDesignModule } from './material-design/material-design.module';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { CoreNavigationModule } from './core-navigation/core-navigation.module';
+import { PreviewPipe } from './Pipes/preview.pipe';
 @NgModule({
-  declarations: [AboutUsComponent],
+  declarations: [
+    AboutUsComponent,
+    PreviewPipe
+  ],
   imports: [
   ],
   exports: [
     MaterialDesignModule,
-    AboutUsComponent
+    AboutUsComponent,
+    CoreNavigationModule,
+    PreviewPipe
   ]
 })
 export class CoreModule { }

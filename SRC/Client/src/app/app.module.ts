@@ -8,14 +8,12 @@ import { NavigationComponent } from './Navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TaskListActiveComponent } from './task/task-list-active.component';
 import { FooterComponent } from './Footer/footer.component';
-import { AboutUsComponent } from './Core/about-us/about-us.component';
 import { CoreModule } from './Core/core.module';
 
 
 const Routes = [
   { path: "", component: TaskListActiveComponent, pathMatch: 'full' },
   { path: "Tasks", component: TaskListActiveComponent},
-  { path: "AboutUs", component: AboutUsComponent},
   { path: '**', component: TaskListActiveComponent }
 ]
 

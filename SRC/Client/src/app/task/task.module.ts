@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TaskListActiveComponent } from './task-list-active.component';
 import { TaskRowTemplateComponent } from './task-row-template.component';
-import { PreviewPipe } from '../pipes/preview.pipe';
 import { MaterialDesignModule } from '../material-design/material-design.module';
 
 @NgModule({
@@ -15,8 +14,8 @@ import { MaterialDesignModule } from '../material-design/material-design.module'
   ],
   declarations: [
     TaskListActiveComponent,
-    TaskRowTemplateComponent,
-    PreviewPipe
+    TaskRowTemplateComponent
+
   ]
 })
 export class TaskModule { }

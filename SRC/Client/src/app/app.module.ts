@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TaskModule } from './task/task.module';
-import { NavigationComponent } from './Navigation/navigation.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { TaskListActiveComponent } from './task/task-list-active.component';
-import { FooterComponent } from './Footer/footer.component';
 import { CoreModule } from './Core/core.module';
+import { SharedModule } from './Shared/shared.module';
+import { BootstrapModule } from './bootstrap/bootstrap.module';
+import { NavigationComponent } from './bootstrap/Components/navigation/navigation.component';
+import { FooterComponent } from './bootstrap/Components/footer/footer.component';
 
 
 const Routes = [
@@ -20,14 +22,14 @@ const Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    FooterComponent
 
   ],
   imports: [
     BrowserModule,
     TaskModule,
     CoreModule,
+    SharedModule,
+    BootstrapModule,
     RouterModule.forRoot(Routes)
 
   ],

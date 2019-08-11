@@ -8,7 +8,8 @@ import { NavigationComponent } from './Navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TaskListActiveComponent } from './task/task-list-active.component';
 import { FooterComponent } from './Footer/footer.component';
-import { AboutUsComponent } from './about-us/about-us.component';
+import { AboutUsComponent } from './Core/about-us/about-us.component';
+import { CoreModule } from './Core/core.module';
 
 
 const Routes = [
@@ -22,13 +23,13 @@ const Routes = [
   declarations: [
     AppComponent,
     NavigationComponent,
-    FooterComponent,
-    AboutUsComponent
+    FooterComponent
 
   ],
   imports: [
     BrowserModule,
     TaskModule,
+    CoreModule,
     RouterModule.forRoot(Routes)
 
   ],

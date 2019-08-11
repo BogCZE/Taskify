@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TaskListActiveComponent } from './task-list-active.component';
 import { TaskRowTemplateComponent } from './task-row-template.component';
-import { MaterialDesignModule } from '../material-design/material-design.module';
+import { CoreModule } from '../Core/core.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    MaterialDesignModule
+    CoreModule
   ],
   exports: [
     TaskListActiveComponent

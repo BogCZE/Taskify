@@ -15,10 +15,10 @@ export class TaskListActiveComponent implements OnInit {
 
   selectedTask: Task;
   constructor(private taskService: TaskService) { }
-  activeTasks: Observable<Task[]>;
+  activeTasks$: Observable<Task[]>;
 
   ngOnInit() {
-    this.activeTasks = this.taskService.getActiveTasks();
+    this.activeTasks$ = this.taskService.getActiveTasks();
   }
 
   trackBy() {

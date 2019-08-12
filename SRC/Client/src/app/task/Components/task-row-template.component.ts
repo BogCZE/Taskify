@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, HostListener, HostBinding } from '@angular/core';
-import { Task, categories } from './task'
+import { Task, categories } from '../Data/task'
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'taskify-task-row-template',

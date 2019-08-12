@@ -1,8 +1,8 @@
-import { Component, OnInit, HostListener, HostBinding } from '@angular/core';
-import { Task } from './task';
-import { TaskService } from './task.service';
-import { Observable, of, interval, from } from 'rxjs';
-import { map, combineAll, take, combineLatest, switchMap, flatMap } from 'rxjs/operators';
+
+import { Task } from '../Data/task';
+import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../Services/task.service';
 
 
 @Component({

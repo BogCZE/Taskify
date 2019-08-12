@@ -1,4 +1,5 @@
-export class Task {
+export class Task implements ITaggable {
+  Tags: Tag[];
   Id: number;
   Identification: string;
   Description: string;
@@ -25,3 +26,12 @@ export enum CategoryEnum {
   'PHP' = 3
 }
 export const categories = CategoryEnum;
+
+export interface Tag {
+  id: number;
+  name: string;
+}
+
+export interface ITaggable {
+  Tags: Tag[];
+}

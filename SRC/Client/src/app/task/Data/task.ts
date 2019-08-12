@@ -1,5 +1,5 @@
 export class Task implements ITaggable {
-  Tags: Tag[];
+  tags: Tag[];
   Id: number;
   Identification: string;
   Description: string;
@@ -33,5 +33,5 @@ export interface Tag {
 }
 
 export interface ITaggable {
-  Tags: Tag[];
+  tags: Tag[];
 }

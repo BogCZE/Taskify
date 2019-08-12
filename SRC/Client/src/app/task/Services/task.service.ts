@@ -19,7 +19,8 @@ export class TaskService {
         ExpectedBudget: 25000,
         Active: true,
         DeadLine:  new Date(2018, 12, 30),
-        Category: categories.Angular
+        Category: categories.Angular,
+        tags: [{id: 1, name: 'Angular'}, {id: 2, name: 'C#'}]
       },
       <Task>{
         Id: 1,
@@ -29,7 +30,8 @@ export class TaskService {
         ExpectedBudget: 25000,
         Active: true,
         DeadLine:  new Date(2018, 2, 30),
-        Category: categories.Angular
+        Category: categories.Angular,
+        tags: [{id: 1, name: 'Angular'}, {id: 2, name: 'C#'}]
       },
       <Task>{
         Id: 2,
@@ -39,7 +41,8 @@ export class TaskService {
         ExpectedBudget: 25000,
         Active: true,
         DeadLine:  new Date(2018, 12, 30),
-        Category: categories["C#"]
+        Category: categories["C#"],
+        tags: [{id: 1, name: 'Angular'}, {id: 2, name: 'C#'}]
       },
       <Task>{
         Id: 3,
@@ -49,7 +52,8 @@ export class TaskService {
         ExpectedBudget: 25000,
         Active: true,
         DeadLine:  new Date(2018, 5, 30),
-        Category: categories.PHP
+        Category: categories.PHP,
+        tags: [{id: 1, name: 'Angular'}, {id: 2, name: 'C#'}]
       },
       <Task>{
         Id: 4,

@@ -1,9 +1,29 @@
 <div class="card h-100 shadow" [ngClass]="{'border-danger': isDeadlined()}">
-  <div class="card-header">{{task.Identification}}<span class="float-right"><a href="#"><mat-icon>info</mat-icon></a><a href="#" class="text-success"><mat-icon>check_circle_outline</mat-icon></a></span></div>
+  <div class="card-header">{{task.Identification}}<span class="float-right"><a href="#">
+        <mat-icon>info</mat-icon>
+      </a><a href="#" class="text-success">
+        <mat-icon>check_circle_outline</mat-icon>
+      </a></span></div>
   <div class="card-body">
     <h5 class="card-title">{{task.Identification}}</h5>
     <p class="card-text ellipsis-overflow">{{task.Description}}</p>
-    <p><small class="float-left"><strong>{{getCategory(task.Category)}}</strong></small><small class="text-muted float-right"><strong>{{task.ExpectedBudget | currency:'CZK '}}</strong></small></p>
+    <p>
+      <small class="float-left">
+        <strong>{{getCategory(task.Category)}}</strong>
+      </small>
+      <small class="text-muted float-right">
+        <strong>{{task.ExpectedBudget | currency:'CZK '}}</strong>
+      </small>
+    </p>
+    <p>
+      <small>
+        <ul style="list-style: none">
+          <li *ngFor="let tag of task.tags" style="display: inline; margin: .25rem; border-radius: .25rem; padding: .375rem .75rem; text-align: center; vertical-align: middle; background-color: cadetblue">
+            {{tag.name}}
+          </li>
+        </ul>
+      </small>
+    </p>
   </div>
   <div class="card-footer text-center" [ngClass]="{'text-danger': isDeadlined()}">
     <small>

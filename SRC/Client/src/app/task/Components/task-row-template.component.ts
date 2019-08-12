@@ -8,24 +8,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TaskRowTemplateComponent implements OnInit {
   @Input() task: Task;
+  isDeadline: boolean;
   isDeadlined(): boolean {
-    const isDanger = !this.task.DeadLine || new Date().getTime() >= this.task.DeadLine.getTime();
-    return isDanger;
+    return !this.task.DeadLine || new Date().getTime() >= this.task.DeadLine.getTime();
   }
 
-  isBeforeDeadline() {
-    let currentDate = new Date();
-    let fiveDaysBeforeDeadlineDate = new Date(new Date(new Date().setHours(0, 0, 0, 0)).getTime() - 5 * 1000 * 60 * 60 * 24);
-    console.log(currentDate);
-    console.log(fiveDaysBeforeDeadlineDate);
-    return this.task.DeadLine;
-  }
   getCategory(category: number) {
     return categories[category];
   }
+
   constructor() { }
 
   ngOnInit() {
+    this.isDeadline = this.isDeadlined();
   }
 
 }

@@ -1,4 +1,4 @@
-<div class="card h-100 shadow" [ngClass]="{'border-danger': isDeadlined()}">
+<div class="card h-100 shadow" [ngClass]="{'border-danger': isDeadline}">
   <div class="card-header">{{task.Identification}}<span class="float-right"><a href="#">
         <mat-icon>info</mat-icon>
       </a><a href="#" class="text-success">
@@ -24,7 +24,7 @@
     </ul>
 
   </div>
-  <div class="card-footer text-center" [ngClass]="{'text-danger': isDeadlined()}">
+  <div class="card-footer text-center" [ngClass]="{'text-danger': isDeadline}">
     <small>
       <strong>Deadline&nbsp;</strong> {{task.DeadLine | date:'MM/dd/yyyy'}}
     </small>

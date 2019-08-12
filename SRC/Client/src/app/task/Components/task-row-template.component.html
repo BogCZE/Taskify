@@ -8,22 +8,21 @@
     <h5 class="card-title">{{task.Identification}}</h5>
     <p class="card-text ellipsis-overflow">{{task.Description}}</p>
     <p>
-      <small class="float-left">
+      <!-- <small class="float-left">
         <strong>{{getCategory(task.Category)}}</strong>
-      </small>
+      </small> -->
       <small class="text-muted float-right">
         <strong>{{task.ExpectedBudget | currency:'CZK '}}</strong>
       </small>
     </p>
-    <p>
-      <small>
-        <ul style="list-style: none">
-          <li *ngFor="let tag of task.tags" style="display: inline; margin: .25rem; border-radius: .25rem; padding: .375rem .75rem; text-align: center; vertical-align: middle; background-color: cadetblue">
-            {{tag.name}}
-          </li>
-        </ul>
-      </small>
-    </p>
+    <br />
+    <ul style="list-style: none; font-size: .75rem; padding-inline-start: 0">
+      <li *ngFor="let tag of task.tags"
+        style="display: inline; margin: .125rem; border-radius: .25rem; padding: .125rem .25rem; text-align: center; vertical-align: middle; background-color: cadetblue">
+        <small>{{tag.name}}</small>
+      </li>
+    </ul>
+
   </div>
   <div class="card-footer text-center" [ngClass]="{'text-danger': isDeadlined()}">
     <small>

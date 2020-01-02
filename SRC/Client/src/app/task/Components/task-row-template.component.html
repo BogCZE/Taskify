@@ -1,9 +1,14 @@
 <div class="card h-100 shadow" [ngClass]="{'border-danger': isDeadline}">
-  <div class="card-header">{{task.identification}}<span class="float-right"><a href="#">
+  <div class="card-header">{{task.identification}}<span class="float-right">
+    <a (click)="info(task)" href="javascript: void(0)">
         <mat-icon>info</mat-icon>
-      </a><a href="#" class="text-success">
+      </a>
+      <a
+       (click)="success(task)" href="javascript: void(0)" class="text-success">
         <mat-icon>check_circle_outline</mat-icon>
-      </a></span></div>
+      </a
+      ></span>
+    </div>
   <div class="card-body">
     <h5 class="card-title">{{task.identification}}</h5>
     <p class="card-text ellipsis-overflow">{{task.description}}</p>

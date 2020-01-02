@@ -18,6 +18,13 @@ export class TaskRowTemplateComponent implements OnInit {
   }
 
   constructor() { }
+  info(task: Task) {
+    console.log(task);
+  }
+
+  success(task: Task) {
+    console.log(task);
+  }
 
   ngOnInit() {
     this.isDeadline = this.isDeadlined();

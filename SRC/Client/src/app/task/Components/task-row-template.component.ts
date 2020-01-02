@@ -10,7 +10,7 @@ export class TaskRowTemplateComponent implements OnInit {
   @Input() task: Task;
   isDeadline: boolean;
   isDeadlined(): boolean {
-    return !this.task.DeadLine || new Date().getTime() >= this.task.DeadLine.getTime();
+    return !this.task.deadLine || new Date().getTime() >= this.task.deadLine.getTime();
   }
 
   getCategory(category: number) {

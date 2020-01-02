@@ -1,18 +1,18 @@
 <div class="card h-100 shadow" [ngClass]="{'border-danger': isDeadline}">
-  <div class="card-header">{{task.Identification}}<span class="float-right"><a href="#">
+  <div class="card-header">{{task.identification}}<span class="float-right"><a href="#">
         <mat-icon>info</mat-icon>
       </a><a href="#" class="text-success">
         <mat-icon>check_circle_outline</mat-icon>
       </a></span></div>
   <div class="card-body">
-    <h5 class="card-title">{{task.Identification}}</h5>
-    <p class="card-text ellipsis-overflow">{{task.Description}}</p>
+    <h5 class="card-title">{{task.identification}}</h5>
+    <p class="card-text ellipsis-overflow">{{task.description}}</p>
     <p>
       <!-- <small class="float-left">
         <strong>{{getCategory(task.Category)}}</strong>
       </small> -->
       <small class="text-muted float-right">
-        <strong>{{task.ExpectedBudget | currency:'CZK '}}</strong>
+        <strong>{{task.expectedBudget | currency:'CZK '}}</strong>
       </small>
     </p>
     <br />
@@ -26,7 +26,7 @@
   </div>
   <div class="card-footer text-center" [ngClass]="{'text-danger': isDeadline}">
     <small>
-      <strong>Deadline&nbsp;</strong> {{task.DeadLine | date:'MM/dd/yyyy'}}
+      <strong>Deadline&nbsp;</strong> {{task.deadLine | date:'MM/dd/yyyy'}}
     </small>
   </div>
 </div>

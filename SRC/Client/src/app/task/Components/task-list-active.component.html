@@ -1,4 +1,4 @@
 <h2>Active tasks <button class="btn"><mat-icon>add</mat-icon></button></h2>
 <div class="row">
-  <taskify-task-row-template *ngFor="let task of activeTasks$ | async;let i = index" [task]="task" class="col-md-3 mb-3"></taskify-task-row-template>
+  <taskify-task-row-template *ngFor="let task of activeTasks$ | async;index as i; trackBy: trackBy" [task]="task" class="col-md-3 mb-3"></taskify-task-row-template>
 </div>

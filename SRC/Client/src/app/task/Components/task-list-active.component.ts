@@ -21,7 +21,7 @@ export class TaskListActiveComponent implements OnInit {
     this.activeTasks$ = this.taskService.getActiveTasks();
   }
 
-  trackBy() {
-    console.log(arguments);
+  trackBy(i:number, task: Task) {
+    return task.id;
   }
 }

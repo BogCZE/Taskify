@@ -1,23 +1,23 @@
 export class Task implements ITaggable {
   tags: Tag[];
-  Id: number;
-  Identification: string;
-  Description: string;
-  DesiredHours: number;
-  ExpectedBudget: number;
-  Comments: Comment[];
-  Active: boolean;
-  DeadLine: Date;
-  Category: CategoryEnum;
+  id: number;
+  identification: string;
+  description: string;
+  desiredHours: number;
+  expectedBudget: number;
+  comments: Comment[];
+  active: boolean;
+  deadLine: Date;
+  category: CategoryEnum;
 }
 
 export class Comment {
-  Id: number;
-  Text: string;
-  Created: Date;
-  Updated: Date;
-  CreatedBy: number;
-  UpdateBy: number;
+  id: number;
+  text: string;
+  created: Date;
+  updated: Date;
+  createdBy: number;
+  updateBy: number;
 }
 
 export enum CategoryEnum {

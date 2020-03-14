@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "Taskify"
+  "defaultProject": "Taskify",
+  "cli": {
+    "analytics": false
+  }
 }
